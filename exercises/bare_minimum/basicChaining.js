@@ -25,7 +25,7 @@ var fetchProfileAndWriteToFile = function(readFilePath, writeFilePath) {
     })
     .then(function(body) {
       return newWriteFile(writeFilePath, JSON.stringify(body));
-    })
+    });
 
 
   // TODO
